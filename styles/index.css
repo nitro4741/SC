@@ -1,0 +1,12 @@
+@import './nav.css';
+@import './card.css';
+@import './section.css';
+@import './contacto.css';
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,200;0,600;1,400;1,700&display=swap');
+
+
+.body {
+    margin: auto;
+    background-color: rgb(194, 193, 193);
+    font-family: 'Josefin Slab', serif;
+}
