@@ -12,6 +12,7 @@
     box-shadow:
     inset 0 -3em 3em rgba(0,0,0,0.1),
           0.3em 0.3em 1em rgba(0,0,0,0.3);
+    margin-bottom: 2rem;
 }
 
 .form_title {
@@ -34,6 +35,7 @@
 
 .form_group {
     position: relative;
+    margin: 0rem 4rem;
     color: black;
 }
 
@@ -44,7 +46,6 @@
     padding: 0.3em 0.3em;
     border: none;
     outline: none;
-    border-bottom: 1px solid rgb(21, 21, 21);
     font-family: 'Josefin Slab', serif;
     font-weight: 700;
     font-size: larger;
@@ -52,16 +53,16 @@
 
 .form_input:focus + .form_label,
 .form_input:not(:placeholder-shown) + .form_label {
-    transform: translateY(-12px) scale(0.7);
+    transform: translateY(-10px) scale(0.7);
     transform-origin: left top;
-    color: #3866f2;
+    color: #000000;
 }
 
 .form_label {
     color:rgba(35, 36, 37, 0.54);
     position: absolute;
     top: 0;
-    left: 5rem;
+    left: 0.3rem;
     transform: translateY(10px);
     transition: transform 0.5s, color 0.3s;
     font-family: 'Times New Roman', Times, serif;
@@ -80,7 +81,29 @@
     padding: 0.5rem 1rem;
 }
 
+.form_line {
+    position: absolute;
+    background-color: #da2eb594;
+    bottom: 0;
+    left: -0.2rem;
+    width: 100%;
+    height: 0.5px;
+    
+
+}
+
 .contact--list {
     list-style: none;
     padding: 0;
+}
+
+
+@media (max-width: 768px) {
+    .form {
+        width: 300px;
+    }
+
+    .form_label {
+        left: 0.2rem;
+    }
 }
