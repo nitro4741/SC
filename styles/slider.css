@@ -1,0 +1,40 @@
+.slider {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30rem;
+    margin: 4rem 1rem;
+    gap: 1rem;
+    background-color: white;
+    border-radius: 2rem;
+
+}
+
+.slider-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider-img {
+    position: absolute;
+    display: flex;
+
+    height: 93%;
+    width: 90%;
+
+    border-radius: 2rem;
+}
+
+@media (min-width: 768px) {
+    .slider {
+        margin: 4rem 15rem;
+    }
+
+     .slider-img {
+        width: 95%;
+        height: 95%;
+
+    } 
+}
